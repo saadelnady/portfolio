@@ -1,0 +1,41 @@
+.about {
+  position: relative;
+  border-left: 2px solid var(--orange);
+}
+.about::before,
+.about::after {
+  position: absolute;
+  content: "";
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.about::before {
+  background-color: var(--light-color);
+  top: 0%;
+  left: -1.3%;
+  z-index: 2;
+}
+.about::after {
+  background-color: var(--skyBlue);
+  top: 0.5%;
+  left: -1%;
+  z-index: 1;
+}
+
+.my-skills {
+  position: relative;
+}
+.my-skills::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: var(--skyBlue);
+  left: 10px;
+}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import myImage from "../assets/myImage.jpg";
+import myImage from "../public/assets/myImage.jpg";
 import { RxGithubLogo } from "react-icons/rx";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";

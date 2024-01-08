@@ -19,11 +19,11 @@ const NavBar = ({ isDark }) => {
         <ul
           className={
             isDark
-              ? "d-flex shadow bg-dark p-3 flex-wrap justify-content-center rounded col-12"
-              : "d-flex shadow p-3 flex-wrap justify-content-center rounded col-12"
+              ? "d-flex shadow bg-dark p-lg-3 flex-wrap justify-content-center rounded col-12"
+              : "d-flex shadow bg-light p-lg-3 flex-wrap justify-content-center rounded col-12"
           }
         >
-          <li className="p-2">
+          <li className="p-1 p-lg-2">
             <Link
               href="/"
               onClick={() => {
@@ -34,7 +34,7 @@ const NavBar = ({ isDark }) => {
                 className={
                   isDark
                     ? isActive
-                      ? "d-flex flex-column justify-content-center align-items-center bg-orange text-light  px-3 py-2 rounded"
+                      ? "d-flex flex-column justify-content-center align-items-center bg-orange text-light px-3 py-2 rounded"
                       : "d-flex flex-column justify-content-center align-items-center  bg-dark2 text-light px-3 py-2  rounded"
                     : isActive
                     ? "d-flex flex-column justify-content-center align-items-center bg-orange  text-light px-3 py-2 rounded"
@@ -46,7 +46,7 @@ const NavBar = ({ isDark }) => {
               </a>
             </Link>
           </li>
-          <li className="p-2">
+          <li className="p-1 p-lg-2">
             <Link href="/resume">
               <a
                 className={
@@ -60,7 +60,7 @@ const NavBar = ({ isDark }) => {
               </a>
             </Link>
           </li>
-          <li className="p-2">
+          <li className="p-1 p-lg-2">
             <Link href="/skills">
               <a
                 className={
@@ -74,7 +74,7 @@ const NavBar = ({ isDark }) => {
               </a>
             </Link>
           </li>
-          <li className="p-2">
+          <li className="p-1 p-lg-2">
             <Link href="/projects">
               <a
                 className={
@@ -88,7 +88,7 @@ const NavBar = ({ isDark }) => {
               </a>
             </Link>
           </li>
-          <li className="p-2">
+          <li className="p-1 p-lg-2">
             <Link href="/certificates">
               <a
                 className={
@@ -102,7 +102,7 @@ const NavBar = ({ isDark }) => {
               </a>
             </Link>
           </li>
-          <li className="p-2">
+          <li className="p-1 p-lg-2">
             <Link href="/contact">
               <a
                 className={

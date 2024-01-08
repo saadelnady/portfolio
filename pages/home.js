@@ -1,20 +1,21 @@
 import React from "react";
-import webDevlop from "../assets/app-development.png";
-import crossPlatform from "../assets/cross-platform.png";
-import maintenance from "../assets/maintenance.png";
-import optimization from "../assets/optimization.png";
-import performance from "../assets/performance.png";
-import responsiveDesign from "../assets/responsive-design.png";
+
+import webDevelopment from "../public/assets/app-development.png";
+import crossPlatform from "../public/assets/cross-platform.png";
+import maintenance from "../public/assets/maintenance.png";
+import optimization from "../public/assets/optimization.png";
+import performance from "../public/assets/performance.png";
+import responsiveDesign from "../public/assets/responsive-design.png";
+
 import Image from "next/image";
 
 const Home = ({ isDark, cards }) => {
-  console.log("cards", cards);
   return (
     <div
       className={
         isDark
-          ? "about col-12 col-lg-7 bg-dark rounded shadow px-5 py-5 overflow-hidden"
-          : "about col-12 col-lg-7 bg-light rounded shadow px-5 py-5 overflow-hidden"
+          ? "home col-12 col-lg-7 bg-dark rounded shadow px-5 py-5   home"
+          : "home col-12 col-lg-7 bg-light rounded shadow px-5 py-5   home"
       }
     >
       <div className="special-heading">
@@ -44,15 +45,25 @@ const Home = ({ isDark, cards }) => {
       <div className="cards row flex-wrap justify-content-between">
         {cards.map((card, index) => {
           return (
-            <div className="card col-5 text-center" key={index}>
+            <div
+              className={
+                isDark
+                  ? "card col-12 col-lg-5 text-center mb-4 bg-dark2 text-light p-4"
+                  : "card col-12 col-lg-5 text-center mb-4 bg-white p-4"
+              }
+              key={index}
+            >
               <Image
                 src={card.imgUrl}
                 alt="card-Image"
-                width={300}
-                height={200}
+                className="object-fit-cover w-50"
               />
-              <h3>{card.title}</h3>
-              <p>{card.subTitle}</p>
+              <h3 className={isDark ? "  text-orange " : "  text-blue "}>
+                {card.title}
+              </h3>
+              <p className={isDark ? "   text-blue mb-3" : "  text-dark mb-3"}>
+                {card.subTitle}
+              </p>
               <p>{card.description}</p>
             </div>
           );
@@ -67,7 +78,7 @@ export default Home;
 export async function getStaticProps() {
   const cards = [
     {
-      imgUrl: webDevlop,
+      imgUrl: webDevelopment,
       title: "Website Development",
       subTitle: "Turning Ideas into Interactive Apps",
       description:

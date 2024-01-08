@@ -3,8 +3,8 @@ const Contact = ({ isDark }) => {
     <div
       className={
         isDark
-          ? "about col-12 col-lg-7 bg-dark rounded shadow px-5 py-5"
-          : "about col-12 col-lg-7 bg-light rounded shadow px-5 py-5"
+          ? " contact col-12 col-lg-7 bg-dark rounded shadow px-5 py-5"
+          : " contact col-12 col-lg-7 bg-light rounded shadow px-5 py-5"
       }
     >
       <div className="special-heading">

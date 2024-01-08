@@ -4,14 +4,14 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/Home.css";
 import "../styles/globals.css";
-
+import "../styles/Resume.css";
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false);
   const HandleIsDark = () => {
     setIsDark(!isDark);
   };
   return (
-    <div className={isDark ? "pb-5 bg-dark2" : "pb-5 bg-light"}>
+    <div className={isDark ? " app bg-dark2" : "app  bg-light"}>
       <Header isDark={isDark} HandleIsDark={HandleIsDark} />
 
       <div className="container-fluid">
