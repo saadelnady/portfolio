@@ -35,10 +35,10 @@ const NavBar = ({ isDark }) => {
                   isDark
                     ? isActive
                       ? "d-flex flex-column justify-content-center align-items-center bg-orange text-light px-3 py-2 rounded"
-                      : "d-flex flex-column justify-content-center align-items-center  bg-dark2 text-light px-3 py-2  rounded"
+                      : "d-flex flex-column justify-content-center align-items-center bg-dark2 text-light px-3 py-2 rounded"
                     : isActive
-                    ? "d-flex flex-column justify-content-center align-items-center bg-orange  text-light px-3 py-2 rounded"
-                    : "d-flex flex-column justify-content-center align-items-center bg-light  text-dark px-3 py-2 rounded"
+                    ? "d-flex flex-column justify-content-center align-items-center bg-orange text-light px-3 py-2 rounded"
+                    : "d-flex flex-column justify-content-center align-items-center bg-white text-dark px-3 py-2 rounded"
                 }
               >
                 <IoMdHome className="fs-3" />
@@ -52,7 +52,7 @@ const NavBar = ({ isDark }) => {
                 className={
                   isDark
                     ? "d-flex flex-column justify-content-center align-items-center bg-dark2 text-light px-3 py-2 rounded"
-                    : "d-flex flex-column justify-content-center align-items-center bg-light text-dark px-3 py-2 rounded"
+                    : "d-flex flex-column justify-content-center align-items-center bg-white text-dark px-3 py-2 rounded"
                 }
               >
                 <GrNotes className="fs-3" />
@@ -66,7 +66,7 @@ const NavBar = ({ isDark }) => {
                 className={
                   isDark
                     ? "d-flex flex-column justify-content-center align-items-center bg-dark2 text-light px-3 py-2 rounded"
-                    : "d-flex flex-column justify-content-center align-items-center bg-light text-dark px-3 py-2 rounded"
+                    : "d-flex flex-column justify-content-center align-items-center  bg-white text-dark px-3 py-2 rounded"
                 }
               >
                 <IoIosFlash className="fs-3" />
@@ -80,7 +80,7 @@ const NavBar = ({ isDark }) => {
                 className={
                   isDark
                     ? "d-flex flex-column justify-content-center align-items-center bg-dark2 text-light px-3 py-2 rounded"
-                    : "d-flex flex-column justify-content-center align-items-center bg-light text-dark px-3 py-2  rounded"
+                    : "d-flex flex-column justify-content-center align-items-center  bg-white text-dark px-3 py-2  rounded"
                 }
               >
                 <RiAppsLine className="fs-3" />
@@ -94,7 +94,7 @@ const NavBar = ({ isDark }) => {
                 className={
                   isDark
                     ? "d-flex flex-column justify-content-center align-items-center bg-dark2 text-light px-3 py-2 rounded"
-                    : "d-flex flex-column justify-content-center align-items-center bg-light text-dark px-3 py-2 rounded"
+                    : "d-flex flex-column justify-content-center align-items-center bg-white text-dark px-3 py-2 rounded"
                 }
               >
                 <PiCertificate className="fs-3" />
@@ -108,7 +108,7 @@ const NavBar = ({ isDark }) => {
                 className={
                   isDark
                     ? "d-flex flex-column justify-content-center align-items-center bg-dark2 text-light px-3 py-2  rounded"
-                    : "d-flex flex-column justify-content-center align-items-center bg-light text-dark px-3 py-2  rounded"
+                    : "d-flex flex-column justify-content-center align-items-center bg-white text-dark px-3 py-2  rounded"
                 }
               >
                 <TiContacts className="fs-3" />

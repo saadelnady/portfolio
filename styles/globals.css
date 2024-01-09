@@ -96,20 +96,38 @@ p {
 .projects {
   margin-top: 50px;
 }
-.app {
-  padding-bottom: 200px;
+.cursor-pointer {
+  cursor: pointer;
 }
-.skills .cards .card div {
+
+@media (width < 768px) {
+  .app {
+    padding-bottom: 200px;
+  }
+}
+
+.card {
+  border: none;
+}
+.card image {
+  height: 100%;
+}
+.card .title {
   bottom: -100%;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  position: absolute;
+  font-size: 12px;
 }
-.skills .cards .card:hover div {
-  bottom: 0;
+@media (width>768px) {
+  .card .title {
+    font-size: 20px;
+  }
 }
-.skills .cards .card {
-  overflow-y: hidden;
+.card:hover .title {
+  bottom: -1%;
+  z-index: 999;
 }

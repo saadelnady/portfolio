@@ -12,7 +12,12 @@ import NodeImg from "../public/assets/skills/node.png";
 import SassImg from "../public/assets/skills/sass.png";
 import Tailwind from "../public/assets/skills/tailwind.png";
 import VscodeImg from "../public/assets/skills/Vscode.png";
-import ExpressImg from "../public/assets/skills/express.png";
+
+import "swiper/css/navigation";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import Image from "next/image";
 const Skills = ({ isDark, mySkills }) => {
@@ -39,16 +44,24 @@ const Skills = ({ isDark, mySkills }) => {
         Technologies I have been working with recently
       </p>
 
-      <div className="carousel overflow-x-auto mt-5">
-        <div className="inner-carousel skills">
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        spaceBetween={50}
+        slidesPerView={2.6}
+        className="mt-5"
+      >
+        <div className="skills position-relative">
           <div className="cards d-flex p-3 ">
             {mySkills.map((skill, index) => {
               return (
-                <div
+                <SwiperSlide
                   className={
                     isDark
-                      ? "card col-3 bg-dark2 me-5  position-relative"
-                      : "card col-3 bg-white me-5  position-relative"
+                      ? "card col-3 bg-dark2 me-5 card cursor-pointer"
+                      : "card col-3 bg-white me-5 card cursor-pointer"
                   }
                   key={index}
                 >
@@ -60,18 +73,18 @@ const Skills = ({ isDark, mySkills }) => {
                   <div
                     className={
                       isDark
-                        ? "position-absolute w-100 text-center fs-3 bg-dark text-light h-25"
-                        : "position-absolute w-100 text-center fs-3 bg-light text-dark h-25"
+                        ? "w-100 text-center bg-dark text-light title"
+                        : "w-100 text-center bg-light text-dark title"
                     }
                   >
                     {skill.title}
                   </div>
-                </div>
+                </SwiperSlide>
               );
             })}
           </div>
         </div>
-      </div>
+      </Swiper>
     </div>
   );
 };
@@ -89,8 +102,7 @@ export async function getStaticProps() {
     { imgUrl: GitImg, title: "Git" },
     { imgUrl: GitHubImg, title: "Git hub" },
     { imgUrl: MongoDbImg, title: "MongoDb" },
-    { imgUrl: NodeImg, title: "Node" },
-    { imgUrl: ExpressImg, title: "Express" },
+    { imgUrl: NodeImg, title: "NodeJs" },
     { imgUrl: SassImg, title: "Sass" },
     { imgUrl: Tailwind, title: "Tailwind" },
     { imgUrl: VscodeImg, title: "Vscode" },
