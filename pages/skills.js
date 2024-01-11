@@ -14,7 +14,6 @@ import Tailwind from "../public/assets/skills/tailwind.png";
 import VscodeImg from "../public/assets/skills/Vscode.png";
 
 import "swiper/css/navigation";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
