@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Projects = ({ isDark, filteredProjects }) => {
+  console.log(filteredProjects.length);
+
   return (
     <>
       <Head>
@@ -76,7 +78,6 @@ export const getStaticProps = async () => {
         new Date(a.order_date || a.created_at || a.updated_at)
       );
     });
-
   return {
     props: { filteredProjects },
   };
