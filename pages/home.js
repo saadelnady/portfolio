@@ -58,7 +58,9 @@ const Home = ({ isDark, cards }) => {
               <p className={isDark ? "text-blue mb-3" : "text-dark mb-3"}>
                 {card.subTitle}
               </p>
-              <p>{card.description}</p>
+              <p className={isDark ? "text-light mb-3" : "text-dark mb-3"}>
+                {card.description}
+              </p>
             </div>
           );
         })}
