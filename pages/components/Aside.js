@@ -1,5 +1,5 @@
 import Image from "next/image";
-import myImage from "../public/assets/myImage.jpg";
+import myImage from "../../public/assets/myImage.jpg";
 import { RxGithubLogo } from "react-icons/rx";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
@@ -9,18 +9,14 @@ import { IoLocationSharp } from "react-icons/io5";
 const Aside = ({ isDark }) => {
   return (
     <div
-      className={
-        isDark
-          ? "col-12 col-lg-4 text-center bg-dark rounded aside p-5 shadow"
-          : "col-12 col-lg-4 text-center bg-light rounded aside p-5 shadow"
-      }
+      className={`col-12 col-lg-4 text-center rounded aside p-5 shadow ${
+        isDark ? "bg-dark" : "bg-light"
+      }`}
     >
       <div className="myImg mx-auto">
         <Image src={myImage} alt="myImg" className="w-100 h-100 rounded" />
       </div>
-      <div
-        className={isDark ? "text-light description" : "text-dark description"}
-      >
+      <div className={`description ${isDark ? "text-light" : "text-dark"}`}>
         <h1>Saad Elnady</h1>
         <p>Full-Stack Developer using MERN</p>
       </div>
@@ -28,11 +24,9 @@ const Aside = ({ isDark }) => {
         <a
           href="https://github.com/saadelnady"
           target="_blank"
-          className={
-            isDark
-              ? "d-inline-block fs-1 text-light bg-dark2 py-2 px-4 me-3 rounded"
-              : " d-inline-block fs-1 text-dark bg-white py-2 px-4 me-3  rounded"
-          }
+          className={`d-inline-block fs-1  py-2 px-4 me-3 rounded ${
+            isDark ? "text-light bg-dark2" : "text-dark bg-white"
+          } `}
         >
           <RxGithubLogo />
         </a>
@@ -40,21 +34,17 @@ const Aside = ({ isDark }) => {
         <a
           href="https://www.linkedin.com/in/saad-elnady/"
           target="_blank"
-          className={
-            isDark
-              ? "d-inline-block fs-1 text-light bg-dark2  py-2 px-4 rounded"
-              : " d-inline-block fs-1 text-dark bg-white  py-2 px-4 rounded"
-          }
+          className={`d-inline-block fs-1  py-2 px-4 rounded ${
+            isDark ? "text-light bg-dark2" : "text-dark bg-white"
+          }`}
         >
           <FaLinkedin />
         </a>
       </div>
       <div
-        className={
-          isDark
-            ? "text-start bg-dark2 mt-4 rounded p-3"
-            : "text-start bg-light mt-4 rounded bg-white p-3"
-        }
+        className={`text-start mt-4 rounded p-3  ${
+          isDark ? "bg-dark2" : "bg-white"
+        } `}
       >
         <ul className="details">
           <li className="border-bottom mt-3 p-3  d-flex align-items-center">
@@ -96,11 +86,7 @@ const Aside = ({ isDark }) => {
             <a
               href="https://drive.google.com/file/d/13aeNFSXdJZBRow4FN0BXSx7PUuQ6UbBy/view"
               target="_blank"
-              className={
-                isDark
-                  ? "text-orange mt-4 px-2 resume-btn d-inline-block"
-                  : "text-orange mt-4 px-2 resume-btn d-inline-block"
-              }
+              className="text-orange mt-4 px-2 resume-btn d-inline-block"
             >
               <p> Download Resume</p>
             </a>

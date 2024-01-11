@@ -1,41 +1,35 @@
 import React from "react";
 
-import webDevelopment from "../public/assets/app-development.png";
-import crossPlatform from "../public/assets/cross-platform.png";
-import maintenance from "../public/assets/maintenance.png";
-import optimization from "../public/assets/optimization.png";
-import performance from "../public/assets/performance.png";
-import responsiveDesign from "../public/assets/responsive-design.png";
+import webDevelopment from "../public/assets/home/app-development.png";
+import crossPlatform from "../public/assets/home/cross-platform.png";
+import maintenance from "../public/assets/home/maintenance.png";
+import optimization from "../public/assets/home/optimization.png";
+import performance from "../public/assets/home/performance.png";
+import responsiveDesign from "../public/assets/home/responsive-design.png";
 
 import Image from "next/image";
 
 const Home = ({ isDark, cards }) => {
   return (
     <div
-      className={
-        isDark
-          ? "home col-12 col-lg-7 bg-dark rounded shadow px-5 py-5   home"
-          : "home col-12 col-lg-7 bg-light rounded shadow px-5 py-5   home"
-      }
+      className={`home col-12 col-lg-7 rounded shadow px-5 py-5  
+         ${isDark ? "bg-dark" : "bg-light "}`}
     >
       <div className="special-heading">
         <h1
-          className={
-            isDark
-              ? "text-light bg-dark d-inline-block p-2"
-              : "text-dark bg-light d-inline-block p-2"
-          }
+          className={`d-inline-block p-2
+                 ${isDark ? "text-light bg-dark" : "text-dark bg-light"}`}
         >
           About
         </h1>
       </div>
       <h3 className="text-orange">Welcome to my portfolio!</h3>
       <p className={isDark ? "text-light fs-4" : "text-dark fs-4"}>
-        I'm Saad Elnady, a motivated junior Full-Stack MERN developer with a
-        passion for learning and a solid understanding of Full-Stack
-        technologies. I'm seeking an opportunity to work alongside experienced
-        professionals where I can further enhance my skills and contribute to
-        the creation of intuitive and engaging user interfaces.
+        I &apos;m Saad Elnady, a motivated junior Full-Stack MERN developer with
+        a passion for learning and a solid understanding of Full-Stack
+        technologies. I &apos;m seeking an opportunity to work alongside
+        experienced professionals where I can further enhance my skills and
+        contribute to the creation of intuitive and engaging user interfaces.
       </p>
       <ul className={isDark ? "text-light mt-3 fs-4" : "text-dark mt-3 fs-4"}>
         My qualifications include:
@@ -46,22 +40,22 @@ const Home = ({ isDark, cards }) => {
         {cards.map((card, index) => {
           return (
             <div
-              className={
-                isDark
-                  ? "card col-12 col-lg-5 text-center mb-4 bg-dark2 text-light p-4"
-                  : "card col-12 col-lg-5 text-center mb-4 bg-white p-4"
-              }
+              className={`${
+                isDark ? "bg-dark2" : " bg-white"
+              } card col-12 col-lg-5 text-center mb-4 text-light p-4`}
               key={index}
             >
               <Image
                 src={card.imgUrl}
                 alt="card-Image"
                 className="object-fit-cover w-50"
+                width={700}
+                height={600}
               />
-              <h3 className={isDark ? "  text-orange " : "  text-blue "}>
+              <h3 className={isDark ? "text-orange" : "text-blue"}>
                 {card.title}
               </h3>
-              <p className={isDark ? "   text-blue mb-3" : "  text-dark mb-3"}>
+              <p className={isDark ? "text-blue mb-3" : "text-dark mb-3"}>
                 {card.subTitle}
               </p>
               <p>{card.description}</p>
@@ -75,7 +69,7 @@ const Home = ({ isDark, cards }) => {
 
 export default Home;
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const cards = [
     {
       imgUrl: webDevelopment,
@@ -127,4 +121,4 @@ export async function getStaticProps() {
   return {
     props: { cards },
   };
-}
+};

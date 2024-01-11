@@ -41,20 +41,8 @@ p {
 }
 :root {
   --light-color: #f2f5f9;
-  --light-color-2: #e1e8ef;
-  --dark-color-1: #1d1b18;
   --orange: #ff9c1b;
-  --lemon: #20e261;
-  --skyBlue: #aa3aff;
-  --red: #eb0867;
-  --body-bg: #f2f5f9;
-  --body-color: #e1e8ef;
-  --white: #fff;
-  --gray-100: #212529;
-  --shadow: rgba(100, 100, 111, 0.2);
-  --pacifico-font: "Pacifico", cursive;
-  --poppins-font: "Poppins", sans-serif;
-  --raleway-font: "Raleway", sans-serif;
+  --red: #058ed9;
 }
 .row {
   --bs-gutter-x: 0;
@@ -71,7 +59,9 @@ p {
   margin-top: -60%;
 }
 @media (width >992px) {
-  .home {
+  .home,
+  .projects,
+  .certificates {
     max-height: 800px;
     overflow-y: auto;
   }
@@ -100,7 +90,7 @@ p {
   cursor: pointer;
 }
 
-@media (width < 768px) {
+@media (width < 992px) {
   .app {
     padding-bottom: 200px;
   }
@@ -112,7 +102,7 @@ p {
 .card image {
   height: 100%;
 }
-.card .title {
+.card .details {
   bottom: -100%;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -123,11 +113,24 @@ p {
   font-size: 12px;
 }
 @media (width>768px) {
-  .card .title {
+  .card .details {
     font-size: 20px;
   }
 }
-.card:hover .title {
-  bottom: -1%;
+.card:hover .details {
+  bottom: 0%;
   z-index: 999;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--orange);
+  resize: none;
+}
+button {
+  border: none;
+}
+.border-start-orange {
+  border-inline-start: 1px solid var(--orange);
 }
