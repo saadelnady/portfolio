@@ -7,11 +7,11 @@ import bootstrapImg from "../public/assets/skills/bootstrap.png";
 import FigmaImg from "../public/assets/skills/figma.png";
 import GitImg from "../public/assets/skills/git.png";
 import GitHubImg from "../public/assets/skills/github.png";
-import MongoDbImg from "../public/assets/skills/Mongodb.png";
+import MongoDbImg from "../public/assets/skills/mongodb.png";
 import NodeImg from "../public/assets/skills/node.png";
 import SassImg from "../public/assets/skills/sass.png";
 import Tailwind from "../public/assets/skills/tailwind.png";
-import VscodeImg from "../public/assets/skills/Vscode.png";
+import VscodeImg from "../public/assets/skills/vscode.png";
 
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
