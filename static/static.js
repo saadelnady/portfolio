@@ -58,7 +58,7 @@ export const cards = [
 
 // resume data
 
-export const whatIcanDo = [
+export const whatCanIdo = [
   `HTML/CSS: Proficiency in creating semantic HTML markup. Advanced
 CSS skills, including CSS Grid, Flexbox, and CSS pre-processors
 like Sass.`,
@@ -162,4 +162,32 @@ export const navLinks = [
     icon: <PiCertificate className="fs-3" />,
   },
   { href: "/contact", label: "Contact", icon: <TiContacts className="fs-3" /> },
+];
+
+import { FaPhone } from "react-icons/fa6";
+import { FaRegEnvelope } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+export const contacts = [
+  {
+    icon: <FaPhone className="text-orange fs-3" />,
+    link: "https://wa.me/+201068230480",
+    text: "01068230480",
+  },
+  {
+    icon: <FaRegEnvelope className="text-orange fs-3" />,
+    link: "mailto:saad.elnady.work@gmail.com",
+    text: " saad.elnady.work@gmail.com",
+  },
+  {
+    icon: <FaGithub className="text-orange fs-3" />,
+    link: "https://github.com/saadelnady",
+    text: "Github",
+  },
+  {
+    icon: <FaLinkedin className="text-orange fs-3" />,
+    link: "https://www.linkedin.com/in/saad-elnady/",
+    text: "Linkedin",
+  },
 ];

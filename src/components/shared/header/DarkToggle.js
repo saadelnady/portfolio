@@ -11,7 +11,7 @@ const DarkToggle = ({ isDark, HandleIsDark }) => {
       <h1 className={`${isDark ? "text-light " : "text-dark"}`}>
         Saad <span className="text-orange">Elnady</span>
       </h1>
-      <div
+      <button
         className="p-3 bg-orange rounded-pill cursor-pointer"
         onClick={() => {
           HandleIsDark();
@@ -22,7 +22,7 @@ const DarkToggle = ({ isDark, HandleIsDark }) => {
         ) : (
           <MdOutlineDarkMode className="fs-3" />
         )}
-      </div>
+      </button>
     </div>
   );
 };

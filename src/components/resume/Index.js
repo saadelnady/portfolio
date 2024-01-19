@@ -1,5 +1,5 @@
-import React from "react";
-import { whatIcanDo } from "../../../static/static";
+import SpecialHeading from "../shared/SpecialHeading";
+import WhatCanIdo from "./WhatCanIdo";
 
 const Index = ({ isDark }) => {
   return (
@@ -7,15 +7,7 @@ const Index = ({ isDark }) => {
       className={`resume col-12 col-lg-7 rounded shadow px-2 px-md-5 py-5
    ${isDark ? "bg-dark " : " text-dark bg-light"}`}
     >
-      <div className="special-heading">
-        <h1
-          className={`d-inline-block p-2 ${
-            isDark ? "text-light bg-dark" : "text-dark bg-light "
-          }`}
-        >
-          Resume
-        </h1>
-      </div>
+      <SpecialHeading title={"Resume"} isDark={isDark} />
       <ul>
         <li className="about px-3">
           <div
@@ -30,21 +22,7 @@ const Index = ({ isDark }) => {
               Information Technology Institute (ITI)
             </p>
             <i className="text-blue">Full Stack using MERN Track</i>
-            <ul className="mt-3">
-              Skills:
-              {whatIcanDo.map((skill, index) => {
-                return (
-                  <li
-                    className={`ps-4 mt-3 my-skills ${
-                      isDark ? "text-light" : "text-dark"
-                    }`}
-                    key={index}
-                  >
-                    {skill}
-                  </li>
-                );
-              })}
-            </ul>
+            <WhatCanIdo isDark={isDark} />
           </div>
         </li>
       </ul>
