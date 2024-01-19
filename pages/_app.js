@@ -1,4 +1,4 @@
-import Header from "../src/components/shared/Header";
+import Header from "../src/components/shared/Header/index.js";
 import Aside from "../src/components/shared/aside/Index.js";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
