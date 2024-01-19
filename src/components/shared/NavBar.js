@@ -54,9 +54,7 @@ const NavBar = ({ isDark }) => {
                 <a
                   onClick={() => handleActiveClass(href)}
                   className={`d-flex flex-column justify-content-center align-items-center ${
-                    router.route === "/"
-                      ? "bg-orange text-light"
-                      : isDark
+                    isDark
                       ? activeTab === href
                         ? "bg-orange text-light"
                         : "bg-dark2 text-light"
