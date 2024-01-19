@@ -1,30 +1,7 @@
 import Link from "next/link";
-import { IoMdHome } from "react-icons/io";
-import { GrNotes } from "react-icons/gr";
-import { IoIosFlash } from "react-icons/io";
-import { RiAppsLine } from "react-icons/ri";
-import { PiCertificate } from "react-icons/pi";
-import { TiContacts } from "react-icons/ti";
-
+import { navLinks } from "../../../../static/static";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-
-const navLinks = [
-  { href: "/", label: "Home", icon: <IoMdHome className="fs-3" /> },
-  { href: "/resume", label: "Resume", icon: <GrNotes className="fs-3" /> },
-  { href: "/skills", label: "Skills", icon: <IoIosFlash className="fs-3" /> },
-  {
-    href: "/projects",
-    label: "Projects",
-    icon: <RiAppsLine className="fs-3" />,
-  },
-  {
-    href: "/certificates",
-    label: "Certificates",
-    icon: <PiCertificate className="fs-3" />,
-  },
-  { href: "/contact", label: "Contact", icon: <TiContacts className="fs-3" /> },
-];
 
 const NavBar = ({ isDark }) => {
   const [activeTab, setActiveTab] = useState("");

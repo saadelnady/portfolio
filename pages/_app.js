@@ -1,5 +1,5 @@
 import Header from "../src/components/shared/Header";
-import Aside from "../src/components/shared/Aside";
+import Aside from "../src/components/shared/aside/Index.js";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 

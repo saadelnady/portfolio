@@ -138,3 +138,28 @@ export const certificates = [
   { imgUrl: HRCertificteImg, desc: "HR Certificate" },
   { imgUrl: IC3CertificteImg, desc: "IC3 Certificate" },
 ];
+// navbar
+
+import { IoMdHome } from "react-icons/io";
+import { GrNotes } from "react-icons/gr";
+import { IoIosFlash } from "react-icons/io";
+import { RiAppsLine } from "react-icons/ri";
+import { PiCertificate } from "react-icons/pi";
+import { TiContacts } from "react-icons/ti";
+
+export const navLinks = [
+  { href: "/", label: "Home", icon: <IoMdHome className="fs-3" /> },
+  { href: "/resume", label: "Resume", icon: <GrNotes className="fs-3" /> },
+  { href: "/skills", label: "Skills", icon: <IoIosFlash className="fs-3" /> },
+  {
+    href: "/projects",
+    label: "Projects",
+    icon: <RiAppsLine className="fs-3" />,
+  },
+  {
+    href: "/certificates",
+    label: "Certificates",
+    icon: <PiCertificate className="fs-3" />,
+  },
+  { href: "/contact", label: "Contact", icon: <TiContacts className="fs-3" /> },
+];
