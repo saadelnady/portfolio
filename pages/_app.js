@@ -1,4 +1,4 @@
-import Header from "../src/components/shared/header/index.js";
+import Header from "../src/components/shared/header/Index.js";
 import Aside from "../src/components/shared/aside/Index.js";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <Header isDark={isDark} HandleIsDark={HandleIsDark} />
 
         <div className="container-fluid">
-          <div className="row  justify-content-evenly">
+          <div className="row    justify-content-evenly">
             <Aside isDark={isDark} />
             <Component {...pageProps} isDark={isDark} />
           </div>
