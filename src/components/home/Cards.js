@@ -9,7 +9,7 @@ const Cards = ({ cards, isDark }) => {
           <div
             className={`${
               isDark ? "bg-dark2" : " bg-white"
-            } card col-12 col-lg-5 text-center mb-4 text-light p-4`}
+            } card col-12 col-sm-5 text-center mb-4 text-light p-4`}
             key={index}
           >
             <Image
