@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { skills } from "../../../static/static";
+import { skills } from "static/static";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css/navigation";

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import DarkToggle from "./DarkToggle";
 import NavBar from "./NavBar";
 

@@ -1,4 +1,4 @@
-import { contacts } from "../../../static/static";
+import { contacts } from "static/static";
 
 const ContactInfo = ({ isDark }) => {
   return (

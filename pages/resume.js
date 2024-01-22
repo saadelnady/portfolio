@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Resume from "../src/components/resume/Index";
+import Resume from "@/components/resume/Index";
 
 const ResumePage = ({ isDark, mySkills }) => {
   return (

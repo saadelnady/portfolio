@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Contact from "../src/components/contact/Index";
+import Contact from "@/components/contact/Index";
 
 const ContactPage = ({ isDark }) => {
   return (

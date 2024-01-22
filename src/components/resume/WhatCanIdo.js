@@ -1,4 +1,4 @@
-import { whatCanIdo } from "../../../static/static";
+import { whatCanIdo } from "static/static";
 
 const WhatCanIdo = ({ isDark }) => {
   return (

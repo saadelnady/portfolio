@@ -1,4 +1,4 @@
-import { certificates } from "../../../static/static";
+import { certificates } from "static/static";
 import Image from "next/image";
 
 const Certificates = ({ isDark }) => {

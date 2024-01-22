@@ -1,4 +1,4 @@
-import Skills from "../src/components/skills/Index";
+import Skills from "@/components/skills/Index";
 
 import Head from "next/head";
 const SkillsPage = ({ isDark }) => {

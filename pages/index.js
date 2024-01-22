@@ -1,6 +1,6 @@
-import Home from "../src/components/home/Index";
+import Home from "@/components/home/Index";
 
-const Index = () => {
-  return <Home />;
+const Index = ({ isDark }) => {
+  return <Home isDark={isDark} />;
 };
 export default Index;

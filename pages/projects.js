@@ -1,5 +1,5 @@
 import Head from "next/head";
-import MyProjects from "../src/components/projects/Index";
+import MyProjects from "@/components/projects/Index";
 
 const ProjectsPage = ({ isDark, filteredProjects }) => {
   return (
@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
   const projects = await response.json();
   const filteredProjects = projects
     .filter((project) => project.homepage)
-    .sort(function (a, b) {
+    .sort((a, b) => {
       return (
         new Date(b.order_date || b.created_at || b.updated_at) -
         new Date(a.order_date || a.created_at || a.updated_at)

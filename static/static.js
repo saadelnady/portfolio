@@ -1,11 +1,11 @@
 // Home components data
 
-import webDevelopment from "../src/components/home/assets/images/app-development.png";
-import crossPlatform from "../src/components/home/assets/images/cross-platform.png";
-import maintenance from "../src/components/home/assets/images/maintenance.png";
-import optimization from "../src/components/home/assets/images/optimization.png";
-import performance from "../src/components/home/assets/images/performance.png";
-import responsiveDesign from "../src/components/home/assets/images/responsive-design.png";
+import webDevelopment from "@/homeImages/app-development.png";
+import crossPlatform from "@/homeImages/cross-platform.png";
+import maintenance from "@/homeImages/maintenance.png";
+import optimization from "@/homeImages/optimization.png";
+import performance from "@/homeImages/performance.png";
+import responsiveDesign from "@/homeImages/responsive-design.png";
 
 export const cards = [
   {
@@ -88,20 +88,20 @@ frontend technologies and best practices.`,
 
 // skills data
 
-import HtmlImg from "../src/components/skills/assets/images/html.png";
-import CssImg from "../src/components/skills/assets/images/css.png";
-import JSImg from "../src/components/skills/assets/images/js.png";
-import ReactImg from "../src/components/skills/assets/images/react.png";
-import ReduxImg from "../src/components/skills/assets/images/redux.png";
-import bootstrapImg from "../src/components/skills/assets/images/bootstrap.png";
-import FigmaImg from "../src/components/skills/assets/images/figma.png";
-import GitImg from "../src/components/skills/assets/images/git.png";
-import GitHubImg from "../src/components/skills/assets/images/github.png";
-import MongoImg from "../src/components/skills/assets/images/mongodb.png";
-import NodeImg from "../src/components/skills/assets/images/node.png";
-import SassImg from "../src/components/skills/assets/images/sass.png";
-import Tailwind from "../src/components/skills/assets/images/tailwind.png";
-import VscodeImg from "../src/components/skills/assets/images/vscode.png";
+import HtmlImg from "@/skillsImages/html.png";
+import CssImg from "@/skillsImages/css.png";
+import JSImg from "@/skillsImages/js.png";
+import ReactImg from "@/skillsImages/react.png";
+import ReduxImg from "@/skillsImages/redux.png";
+import bootstrapImg from "@/skillsImages/bootstrap.png";
+import FigmaImg from "@/skillsImages/figma.png";
+import GitImg from "@/skillsImages/git.png";
+import GitHubImg from "@/skillsImages/github.png";
+import MongoImg from "@/skillsImages/mongodb.png";
+import NodeImg from "@/skillsImages/node.png";
+import SassImg from "@/skillsImages/sass.png";
+import Tailwind from "@/skillsImages/tailwind.png";
+import VscodeImg from "@/skillsImages/vscode.png";
 
 export const skills = [
   { imgUrl: HtmlImg, title: "Html5" },
@@ -121,13 +121,13 @@ export const skills = [
 ];
 // certificates
 
-import BussinessCertificteImg from "../src/components/certificates/assets/images/Bussiness.jpg";
-import EnglishCertificteImg from "../src/components/certificates/assets/images/English.jpg";
-import HRCertificteImg from "../src/components/certificates/assets/images/HR.jpg";
-import IC3CertificteImg from "../src/components/certificates/assets/images/IC3.jpg";
-import MongoDbCertificteImg from "../src/components/certificates/assets/images/MongoDb.png";
-import NodejsCertificteImg from "../src/components/certificates/assets/images/Nodejs.png";
-import ReactCertificatesImg from "../src/components/certificates/assets/images/React.jpg";
+import BussinessCertificteImg from "@/certificatesImages/Bussiness.jpg";
+import EnglishCertificteImg from "@/certificatesImages/English.jpg";
+import HRCertificteImg from "@/certificatesImages/HR.jpg";
+import IC3CertificteImg from "@/certificatesImages/IC3.jpg";
+import MongoDbCertificteImg from "@/certificatesImages/MongoDb.png";
+import NodejsCertificteImg from "@/certificatesImages/Nodejs.png";
+import ReactCertificatesImg from "@/certificatesImages/React.jpg";
 
 export const certificates = [
   { imgUrl: MongoDbCertificteImg, desc: "MongoDb Certificate" },

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/sharedComponents/*": ["src/components/shared/*"],
+      "@/components/*": ["src/components/*"],
+      "@/homeImages/*": ["src/components/home/assets/images/*"],
+      "@/skillsImages/*": ["/src/components/skills/assets//images/*"],
+      "@/certificatesImages/*": ["src/components/certificates/assets/images/*"]
+    }
+  }
+}

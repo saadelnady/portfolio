@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Certificates from "../src/components/certificates/Index";
+import Certificates from "@/components/certificates/Index";
 const CertificatesPage = ({ isDark }) => {
   return (
     <>

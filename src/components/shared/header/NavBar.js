@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks } from "../../../../static/static";
+import { navLinks } from "static/static";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
@@ -8,7 +8,6 @@ const NavBar = ({ isDark }) => {
   const router = useRouter();
 
   useEffect(() => {
-    // Set initial active state when the component mounts
     if (router.route === "/") {
       setActiveTab("/");
     }
