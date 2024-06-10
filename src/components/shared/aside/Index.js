@@ -84,7 +84,7 @@ const Aside = ({ isDark }) => {
           </li>
           <li className="text-center">
             <a
-              href="https://drive.google.com/file/d/13aeNFSXdJZBRow4FN0BXSx7PUuQ6UbBy/view"
+              href="https://drive.google.com/file/d/1md9iRa9ZhYalczkE5O43eae3feRPl9tt/view"
               target="_blank"
               className="text-orange mt-4 px-2 resume-btn d-inline-block"
             >
