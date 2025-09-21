@@ -56,7 +56,7 @@ const Aside = ({ isDark }) => {
                 target="_blank"
                 className={isDark ? "text-light" : "text-dark"}
               >
-                01068230480
+                +201068230480
               </a>
             </div>
           </li>
@@ -84,11 +84,11 @@ const Aside = ({ isDark }) => {
           </li>
           <li className="text-center">
             <a
-              href="https://drive.google.com/file/d/1md9iRa9ZhYalczkE5O43eae3feRPl9tt/view"
+              href="https://drive.google.com/file/d/1suHv1pQDyB6A408vHVfSSvOVZ2MyL_rI/view?usp=sharing"
               target="_blank"
               className="text-orange mt-4 px-2 resume-btn d-inline-block"
             >
-              <p> Download Resume</p>
+              <p>My resume</p>
             </a>
           </li>
         </ul>

@@ -7,6 +7,7 @@ import "styles/globals.css";
 
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 const MyApp = ({ Component, pageProps }) => {
   const [isDark, setIsDark] = useState(false);
@@ -50,6 +51,7 @@ const MyApp = ({ Component, pageProps }) => {
           </div>
         </div>
       </div>
+      <Toaster position="top-right" reverseOrder={false} />
     </>
   );
 };

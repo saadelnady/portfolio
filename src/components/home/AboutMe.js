@@ -5,17 +5,19 @@ const AboutMe = ({ isDark }) => {
     <div>
       <h3 className="text-orange">Welcome to my portfolio!</h3>
       <p className={isDark ? "text-light fs-4" : "text-dark fs-4"}>
-        I &apos;m Saad Elnady, a motivated junior Full-Stack MERN developer with
-        a passion for learning and a solid understanding of Full-Stack
-        technologies. I &apos;m seeking an opportunity to work alongside
-        experienced professionals where I can further enhance my skills and
-        contribute to the creation of intuitive and engaging user interfaces.
+        I’m Saad Elnady, a motivated Full-Stack MERN Developer with a strong
+        passion for continuous learning and a solid foundation in full-stack
+        technologies. I’m seeking an opportunity to collaborate with experienced
+        professionals, enhance my skills, and contribute to building intuitive,
+        engaging, and high-quality user experiences.
       </p>
       <div className={isDark ? "text-light mt-3 fs-4" : "text-dark mt-3 fs-4"}>
         My qualifications include:
+        <p className="ms-5 mt-2 fs-3">Frontend Developer at TJAARA</p>
         <p className="ms-5 mt-2 fs-3">MEARN Track Graduate at ITI</p>
       </div>
-      <h3 className="text-orange mt-4">What i do !</h3>
+
+      <h3 className="text-orange mt-4">What I do !</h3>
     </div>
   );
 };
