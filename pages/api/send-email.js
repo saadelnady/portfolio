@@ -5,12 +5,11 @@ export default async function handler(req, res) {
     const { name, email, message } = req.body;
 
     try {
-      // إعداد الـ transporter
       const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          user: process.env.EMAIL_USER, // حط ايميلك
-          pass: process.env.EMAIL_PASS, // باسورد او App Password
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
         },
       });
 
